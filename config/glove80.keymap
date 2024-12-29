@@ -33,7 +33,7 @@
 #define LAYER_RightMiddy 9
 #define LAYER_RightIndex 10
 #define LAYER_Games 11
-#define LAYER_Games_right_thumb 12
+#define LAYER_Games_thumb 12
 #define LAYER_W_hold_thumb 13
 #define LAYER_W_hold_numpad 14
 #define LAYER_A_hold_thumb 15
@@ -131,7 +131,7 @@
           ________ ________ ________ ________ ________ ________ ________ ________ WHITE    ________ ________ ________ ________ ________ ________ ________ ________ ________
           ________ ________ ________ ________ ________          ________ ________ ________ ________ ________ ________          ________ ________ ________ ________ ________
         >;
-        layer-id = <LAYER_Games>;
+        layer-id = <LAYER_Games_thumb>;
       };
 
       Lower {
@@ -4386,14 +4386,14 @@ macros {
             >;
         };
 
-        layer_Games_right_thumb {
+        layer_Games_thumb {
             bindings = <
- &trans  &trans  &trans  &trans  &trans                                                                                                                   &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                                                                                   &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans                     &trans                       &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &hold_toggle 11  &kp_to_hold_toggle RET 11  &kp_to_hold_toggle SPACE 11          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                                                                                                                &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                                                                                                &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &hold_toggle 11           &trans                     &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans          &trans  &trans           &trans  &hold_toggle 11  &kp_to_hold_toggle RET 11  &hold_toggle 11          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -4520,12 +4520,12 @@ macros {
 
         layer_Symbol {
             bindings = <
-     &none     &none      &none      &none      &none                                                                                                &none                &none                &none                &none   &none
- &kp TILDE  &kp LBKT   &kp LBRC   &kp RBRC   &kp RBKT  &kp STAR                                                                 &none                &none                &none                &none                &none   &none
- &kp GRAVE   &kp SQT   &kp LPAR   &kp RPAR   &kp EXCL  &kp PLUS                                                              &kp SEMI  &kp RIGHT_INDEX_MOD  &kp RIGHT_MIDDY_MOD  &kp RIGHT_RING1_MOD  &kp RIGHT_PINKY_MOD   &none
-  &kp HASH  &kp DLLR  &kp EQUAL    &kp DQT  &kp QMARK    &kp GT                                                               &kp DOT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET   &none
- &kp PRCNT  &kp AMPS  &kp MINUS  &kp UNDER  &kp COLON    &kp LT  &trans  &trans   &trans              &none   &none   &none  &kp FSLH              &kp DEL          &kp LS(TAB)                &none                &none   &none
-    &trans    &trans   &kp BSLH   &kp FSLH   &kp SEMI            &trans  &trans  &tog 24  &tog LAYER_Symbol   &none   &none                         &trans               &trans               &trans               &trans   &none
+     &none     &none       &none          &none      &none                                                                                                &none                &none                &none                &none   &none
+ &kp TILDE  &kp LBKT    &kp LBRC       &kp RBRC   &kp RBKT  &kp STAR                                                                 &none                &none                &none                &none                &none   &none
+ &kp GRAVE   &kp SQT  &kp LS(N8)     &kp LS(N9)   &kp EXCL  &kp PLUS                                                              &kp SEMI  &kp RIGHT_INDEX_MOD  &kp RIGHT_MIDDY_MOD  &kp RIGHT_RING1_MOD  &kp RIGHT_PINKY_MOD   &none
+  &kp HASH  &kp DLLR  &kp LS(N1)  &kp LS(MINUS)  &kp QMARK    &kp GT                                                               &kp DOT             &kp BSPC              &kp TAB            &kp SPACE              &kp RET   &none
+ &kp PRCNT  &kp AMPS    &kp FSLH   &kp LS(FSLH)  &kp COLON    &kp LT  &trans  &trans   &trans              &none   &none   &none  &kp FSLH              &kp DEL          &kp LS(TAB)                &none                &none   &none
+    &trans    &trans  &kp RA(N2)       &kp FSLH   &kp SEMI            &trans  &trans  &tog 24  &tog LAYER_Symbol   &none   &none                         &trans               &trans               &trans               &trans   &none
             >;
         };
 

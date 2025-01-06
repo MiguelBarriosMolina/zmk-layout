@@ -3762,7 +3762,7 @@ behaviors {
         #binding-cells = <1>;
         bindings = <&tog>, <&trans>;
     };
-
+    /*
     lshift_double_tap_hold: lshift_double_tap_hold {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -3775,6 +3775,7 @@ behaviors {
             tapping-term-ms = <200>;
             bindings = <&release_to_kp LCTRL>, <&kt LCTRL>;
     };
+*/
     crumb: thumb_layer_access_retro_tap {
         compatible = "zmk,behavior-hold-tap";
         flavor = THUMB_HOLDING_TYPE;

@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  * Copyright (c) 2023 Innaworks Development Limited, trading as MoErgo
@@ -3762,18 +3761,20 @@ behaviors {
         #binding-cells = <1>;
         bindings = <&tog>, <&trans>;
     };
-    lshift_double_tap_hold: lshift_double_tap_hold_tapdance {
-        compatible = "zmk,behavior-tap-dance";
-        #binding-cells = <0>;
-        tapping-term-ms = <200>;
-        bindings = <&release_to_kp LSHIFT>, <&kt LSHIFT>;
-    };
-    lctrl_double_tap_hold: lctrl_double_tap_hold_tapdance {
-       compatible = "zmk,behavior-tap-dance";
-       #binding-cells = <0>; 
-       tapping-term-ms = <200>;
-       bindings = <&release_to_kp LCTRL>, <&kt LCTRL>;
-    };
+  /*
+  *  lshift_double_tap_hold: lshift_double_tap_hold_tapdance {
+  *      compatible = "zmk,behavior-tap-dance";
+  *      #binding-cells = <0>;
+  *      tapping-term-ms = <200>;
+  *      bindings = <&release_to_kp LSHIFT>, <&kt LSHIFT>;
+  *  };
+  *  lctrl_double_tap_hold: lctrl_double_tap_hold_tapdance {
+  *     compatible = "zmk,behavior-tap-dance";
+  *     #binding-cells = <0>; 
+  *     tapping-term-ms = <200>;
+  *     bindings = <&release_to_kp LCTRL>, <&kt LCTRL>;
+  *  };
+  */
     crumb: thumb_layer_access_retro_tap {
         compatible = "zmk,behavior-hold-tap";
         flavor = THUMB_HOLDING_TYPE;
